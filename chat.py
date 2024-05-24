@@ -9,7 +9,7 @@ import json
 load_dotenv()
 
 # Configure the Google Generative AI client
-genai.configure(api_key="AIzaSyDOaHb6p2MQa7peRXbWBr0vlqHHygUvUK0")
+genai.configure(api_key=api_key=os.getenv('GOOGLE_API_KEY'))
 
 # Streamlit UI elements
 st.title("ATS System")
